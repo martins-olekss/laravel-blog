@@ -1,0 +1,35 @@
+//
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: 750px;
+    margin: 0 auto;
+}
+nav {
+    ul {
+        li {
+            display: inline-block;
+            width: 150px;
+        }
+    }
+}
+
+.post-list {
+    width: 100%;
+    border-collapse: collapse;
+    td {
+        text-align: center;
+        padding: 10px 0 10px 0;
+        border: 1px solid #333;
+    }
+}
+
+form.posts {
+    width: 600px;
+    margin: 0 auto;
+    textarea { padding: 5px; }
+    input, textarea { display: block; width: 100%; }
+}
+

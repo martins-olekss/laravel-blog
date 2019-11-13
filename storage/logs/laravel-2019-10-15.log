@@ -1,0 +1,21 @@
+[2019-10-15 10:52:15] local.ERROR: The /var/www/laravel-3dom/bootstrap/cache directory must be present and writable. {"exception":"[object] (Exception(code: 0): The /var/www/laravel-3dom/bootstrap/cache directory must be present and writable. at /var/www/laravel-3dom/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php:168)
+[stacktrace]
+#0 /var/www/laravel-3dom/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(127): Illuminate\\Foundation\\PackageManifest->write(Array)
+#1 /var/www/laravel-3dom/vendor/laravel/framework/src/Illuminate/Foundation/Console/PackageDiscoverCommand.php(32): Illuminate\\Foundation\\PackageManifest->build()
+#2 [internal function]: Illuminate\\Foundation\\Console\\PackageDiscoverCommand->handle(Object(Illuminate\\Foundation\\PackageManifest))
+#3 /var/www/laravel-3dom/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(32): call_user_func_array(Array, Array)
+#4 /var/www/laravel-3dom/vendor/laravel/framework/src/Illuminate/Support/helpers.php(522): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#5 /var/www/laravel-3dom/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(90): value(Object(Closure))
+#6 /var/www/laravel-3dom/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(34): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#7 /var/www/laravel-3dom/vendor/laravel/framework/src/Illuminate/Container/Container.php(591): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#8 /var/www/laravel-3dom/vendor/laravel/framework/src/Illuminate/Console/Command.php(202): Illuminate\\Container\\Container->call(Array)
+#9 /var/www/laravel-3dom/vendor/symfony/console/Command/Command.php(255): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#10 /var/www/laravel-3dom/vendor/laravel/framework/src/Illuminate/Console/Command.php(189): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#11 /var/www/laravel-3dom/vendor/symfony/console/Application.php(934): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#12 /var/www/laravel-3dom/vendor/symfony/console/Application.php(273): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Foundation\\Console\\PackageDiscoverCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#13 /var/www/laravel-3dom/vendor/symfony/console/Application.php(149): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#14 /var/www/laravel-3dom/vendor/laravel/framework/src/Illuminate/Console/Application.php(90): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#15 /var/www/laravel-3dom/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(131): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#16 /var/www/laravel-3dom/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#17 {main}
+"} 
