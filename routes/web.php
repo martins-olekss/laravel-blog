@@ -32,3 +32,8 @@ Route::get('/', function () {
 //Route::delete('/posts/{id}', 'PostsController@destroy');
 
 Route::resource('posts', 'PostsController');
+Auth::routes();
+//Route::get('/home', 'HomeController@index')->name('home');
+
+//Route::get('/home', 'HomeController@index')->name('home')->middleware('auth');
+

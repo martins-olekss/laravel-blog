@@ -5,6 +5,13 @@ npm-debug.log
 # IDE
 .idea/
 
+# Custom
+storage/app/public/csv/
+storage/app/public/files/
+storage/app/public/tiles/
+storage/framework/
+storage/logs/
+
 # Laravel 4 specific
 bootstrap/compiled.php
 app/storage/
