@@ -11,10 +11,12 @@ class PostsController extends Controller
 
     public function __construct()
     {
+        /*
         $this->middleware('auth', ['only' => [
             'create',
             'edit'
         ]]);
+        */
     }
 
     /**
@@ -24,7 +26,7 @@ class PostsController extends Controller
      */
     public function index()
     {
-        $posts = Post::all();
+        $posts = Post::all()->sortBy('created_at',SORT_REGULAR, true);
 
         return view('posts.index', ['posts' => $posts]);
     }
@@ -36,7 +38,9 @@ class PostsController extends Controller
      */
     public function create()
     {
-        return view('posts.create');
+        // view('posts.create');
+        return redirect('/posts');
+
     }
 
     /**
@@ -47,10 +51,10 @@ class PostsController extends Controller
      */
     public function store(Request $request)
     {
-        $post = new Post();
-        $post->title = $request->title;
-        $post->content = $request->article_content;
-        $post->save();
+        // $post = new Post();
+        // $post->title = $request->title;
+        // $post->content = $request->article_content;
+        // $post->save();
 
         return redirect('/posts');
     }
@@ -76,9 +80,11 @@ class PostsController extends Controller
      */
     public function edit($id)
     {
-       $post = Post::find($id);
+        //$post = Post::find($id);
+        //
+        //return view('posts.edit', ['post' => $post]);
 
-        return view('posts.edit', ['post' => $post]);
+        return redirect('/posts');
     }
 
     /**
@@ -90,12 +96,14 @@ class PostsController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $post = Post::find($id);
-        $post->title = $request->title;
-        $post->content = $request->article_content;
-        $post->save();
+        //$post = Post::find($id);
+        //$post->title = $request->title;
+        //$post->content = $request->article_content;
+        //$post->save();
+        //
+        //return redirect('/posts/' . $id);
 
-        return redirect('/posts/' . $id);
+        return redirect('/posts');
     }
 
     /**
